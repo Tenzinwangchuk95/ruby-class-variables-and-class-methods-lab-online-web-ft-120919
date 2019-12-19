@@ -7,6 +7,8 @@ class Song
     @@genre_count = {}
   def initialize (name, artist, genre)
     @name = name
+    @artist = artist
+    @genre = genre
     @@artists << artist unless @@artists.include?(artist)
     @@genres << genre unless @@genres.include?(genre)
     @@count =+ 1
