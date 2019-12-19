@@ -26,6 +26,6 @@ class Song
     @@genres.uniq
   end
   
-  
+  data.each{|v| h[v] += 1}
   
 end
