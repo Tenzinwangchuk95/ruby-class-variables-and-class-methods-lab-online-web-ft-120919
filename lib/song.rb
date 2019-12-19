@@ -11,7 +11,7 @@ class Song
     if @@genre.inlude?(genre)
       nil
     else
-      @@genre << genre
+      @@genre << genre unless 
     @@count =+ 1
   end
   
