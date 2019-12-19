@@ -26,6 +26,8 @@ class Song
     @@genres.uniq
   end
   
-  data.each{|v| h[v] += 1}
+  def self.genre_count
+    @@genres.each{|v| @@genre_count[v] += 1}
+  end
   
 end
